@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moja Strona Testowa</title>
+
+<!-- TU WKLEISZ GTM -->
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+nav a{
+    margin-right:20px;
+    text-decoration:none;
+}
+.products{
+    display:flex;
+    gap:20px;
+}
+.product{
+    border:1px solid #ddd;
+    padding:20px;
+    width:250px;
+}
+button{
+    padding:10px 15px;
+    cursor:pointer;
+}
+form{
+    margin-top:40px;
+}
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Strona główna</h1>
+<h2>Serwus</h2>
+<p>Na tej stronie możesz ćwiczyć narzędzia do śledzenia.</p>
+
+<nav>
+    <a href="#">Strona główna</a>
+    <a href="#">Blog</a>
+    <a href="#">Sklep</a>
+    <a href="#">Koszyk</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<h2>Najczęściej kupowane</h2>
+
+<div class="products">
+
+<div class="product">
+<h3>Witamina A</h3>
+<p>20 zł</p>
+<button class="add-cart">Dodaj do koszyka</button>
+</div>
+
+<div class="product">
+<h3>Witamina C</h3>
+<p>20 zł</p>
+<button class="add-cart">Dodaj do koszyka</button>
+</div>
+
+<div class="product">
+<h3>Witamina E</h3>
+<p>20 zł</p>
+<button class="add-cart">Dodaj do koszyka</button>
+</div>
+
+</div>
+
+<section id="kontakt">
+<h2>Formularz kontaktowy</h2>
+
+<form action="thank-you.html">
+<input type="text" placeholder="Twoje imię i nazwisko" required>
+<input type="email" placeholder="Twój adres e-mail" required>
+<input type="text" placeholder="Temat">
+<textarea placeholder="Twoja wiadomość"></textarea>
+<button type="submit">Wyślij</button>
+</form>
+
+</section>
+
+</body>
+</html>
